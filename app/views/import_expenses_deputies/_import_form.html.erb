@@ -1,0 +1,10 @@
+<div class="row g-3 align-items-center">
+  <%= form_with url: "/import", method: :post do |form| %>
+    <div class="mb-3">
+      <%= form.label :file, "Arquivo:", class: "form-label" %>
+      <%= form.file_field :file, accept: 'text/csv', class: "form-control" %>
+      <div id="emailHelp" class="form-text">Somente arquivo .csv</div>
+    </div>
+    <%= form.submit "Importar dados", class: "btn btn-primary" %>
+  <% end %>
+</div>
