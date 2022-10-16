@@ -1,0 +1,10 @@
+<% content_for :title do %>
+  <div class="pb-2 fs-2">Gastos</div>
+  <div class="fs-3 fw-bold"><%= @deputy.name %></div>
+<% end %>
+
+<div class='mt-2'><%= link_to '< Início ', root_path %></div>
+
+<div class="row mt-5">
+  <%= render 'table_expenses', expenses: @expenses %>
+</div>

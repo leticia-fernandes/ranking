@@ -1,0 +1,12 @@
+<% content_for :title do %>
+  <div class="fs-2">Ranking de Gastos</div>
+  <div class="fs-3 fw-bold">Deputados/CE</div>
+<% end %>
+
+<div class="row">
+  <%= render 'import_expenses_deputies/import_form' %>
+</div>
+
+<div class="row mt-5">
+  <%= render 'table_info', deputies: @deputies %>
+</div>
