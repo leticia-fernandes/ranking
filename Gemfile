@@ -71,4 +71,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "shoulda-matchers"
 end
+gem "rspec-rails", group: [:development, :test]
+gem "rails-controller-testing", group: [:development, :test]

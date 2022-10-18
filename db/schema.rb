@@ -13,7 +13,7 @@
 ActiveRecord::Schema[7.0].define(version: 2022_10_14_215018) do
   create_table "deputies", force: :cascade do |t|
     t.string "name"
-    t.integer "registration"
+    t.integer "registration", null: false
     t.string "uf"
     t.string "party"
     t.datetime "created_at", null: false
@@ -22,7 +22,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_14_215018) do
   end
 
   create_table "deputy_expenses", force: :cascade do |t|
-    t.integer "deputy_registration"
+    t.integer "deputy_registration", null: false
     t.string "description"
     t.date "date"
     t.string "establishment"
