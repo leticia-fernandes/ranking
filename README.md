@@ -1,24 +1,4 @@
-# README
+# Ranking Deputados CE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicativo web que lista os gastos dos deputados, filtrando os do Ceará, onde os dados são importados a partir dos dados de um csv baixado do site 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
